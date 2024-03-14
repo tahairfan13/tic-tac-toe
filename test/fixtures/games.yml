@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_x: MyString
+  player_o: MyString
+  current_turn: MyString
+  status: MyString
+  board: MyText
+
+two:
+  player_x: MyString
+  player_o: MyString
+  current_turn: MyString
+  status: MyString
+  board: MyText
