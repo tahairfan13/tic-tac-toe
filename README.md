@@ -63,7 +63,7 @@ To run this application locally, follow these steps:
 - **Ruby on Rails:** Framework for building web applications.
 - **React:** JavaScript library for building user interfaces.
 - **HTML/CSS:** For the user interface.
-- **PostgreSql:** Database for storing game data.
+- **Sqlite:** Database for storing game data.
 
 ## Contributors
 
