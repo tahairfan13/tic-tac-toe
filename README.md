@@ -1,41 +1,74 @@
-# Overview
+# Tic Tac Toe Application
 
-Thank you for interviewing with ShopHire!
+This is a Tic Tac Toe application built on Rails and React. It allows users to play the classic game of Tic Tac Toe and keeps track of previous games, enabling users to replay them whenever they want.
 
-This assessment is designed to test some of your real-world coding skills. There are a set of tasks outlined for you to complete.
-Complete as many of them as you can in 1 hour, using best practices. You DO NOT have to finish all of the tasks to be successful.
+## Features
 
-## Requirements
+- **Play Tic Tac Toe:** Users can play the game against each other.
+- **Track Previous Games:** The application keeps a record of all previous games.
+- **Replay Games:** Users can revisit and replay any of their previous games.
 
-`ruby 3.2.3`
+## How to Play
 
-## Assignment
+1. **Start a New Game:** Users can start a new game of Tic Tac Toe.
+2. **Play the Game:** Users take turns marking the spaces on the board with their respective symbols (X or O).
+3. **View Previous Games:** Users can view their previous games and replay them if desired.
 
-You have been given a very basic version of a [tic tac toe](https://en.wikipedia.org/wiki/Tic-tac-toe) game.
+## Installation
 
-You can run the server using `bundle exec rails s` after you've installed the dependencies.
+To run this application locally, follow these steps:
 
-If you have never played before or if it's been a while, check out this version: https://playtictactoe.org/. Your tasks are designed to build out a fully functioning tic tac toe game.
+1. Clone the repository:
 
-For each task, remember to use best practices (e.g. add testing or docs for really tricky functions, etc.). Also keep in mind that you do not have to finish all of the tasks.
+    ```
+    git clone https://github.com/your_username/tic-tac-toe.git
+    ```
 
-To start, create a fork of this repo. Then, create a separate branch to organize your changes. Once you're done with the assessment, create a pull request against the forked repo with your changes. When creating the pull request please note the changes you're making as if it were a real production pull request.
+2. Navigate to the project directory:
 
-## Tasks
+    ```
+    cd tic-tac-toe
+    ```
 
-1. The UI is currently very barebones. Add some simple styling that will render each token in its own box in a 3x3 grid. View an example [here](https://en.wikipedia.org/wiki/Tic-tac-toe#/media/File:Tic_tac_toe.svg).
+3. Install Rails dependencies:
 
-2. All of the tokens are hard-coded. Add the ability for a player to click on a square to assign a token. Remember to toggle the token between turns (first click should be "X" then "O", etc.).
+    ```
+    bundle install
+    ```
 
-3. Now let's add the ability to determine a winner. Whenever a user clicks a square send the state of the board to the Rails backend to see if the game is over and who won. If the game is over then players should no longer be able to change squares. If there is a winner, then we should see a message (e.g. "X Wins" or "O Wins"). For a tie game, write "No Winner").
+4. Install React dependencies:
 
-[Optional] Only if you have extra time after completing the first 3 steps should you attempt this.
+    ```
+    cd client
+    npm install
+    ```
 
-4. Now, instead of a human player going second, there should be a backend-driven AI. Let "X" go first and be the human, but whenever "O" goes, then a function call should be made to the backend to choose the next square. Use whatever strategy you like to choose the square.
+5. Set up the database:
 
-## Evaluation
+    ```
+    rails db:create
+    rails db:migrate
+    ```
 
-You'll be evaluated along several dimensions:
-* How well you followed the instructions
-* Whether the game works as desired
-* How well structured and tested your code is
+6. Start the Rails server:
+
+    ```
+    rails server
+    ```
+
+7. Visit `http://localhost:3000` in your browser to access the application.
+
+## Technologies Used
+
+- **Ruby on Rails:** Framework for building web applications.
+- **React:** JavaScript library for building user interfaces.
+- **HTML/CSS:** For the user interface.
+- **PostgreSql:** Database for storing game data.
+
+## Contributors
+
+- Taha Ali Irfan (@tahairfan13)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
