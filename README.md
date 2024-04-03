@@ -8,6 +8,8 @@ This is a Tic Tac Toe application built on Rails and React. It allows users to p
 - **Track Previous Games:** The application keeps a record of all previous games.
 - **Replay Games:** Users can revisit and replay any of their previous games.
 
+![Tic Tac Toe Screenshot](https://github.com/tahairfan13/tic-tac-toe/blob/main/Screenshot%202024-04-03%20at%202.38.44%20PM.png)
+
 ## How to Play
 
 1. **Start a New Game:** Users can start a new game of Tic Tac Toe.
