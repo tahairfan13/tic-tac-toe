@@ -41,8 +41,7 @@ To run this application locally, follow these steps:
 4. Install React dependencies:
 
     ```
-    cd client
-    npm install
+    yarn
     ```
 
 5. Set up the database:
